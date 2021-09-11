@@ -930,9 +930,9 @@ for(s=J.aE(a);s.t();){r=s.gD(s)
 q=J.an(r)
 p=q.h(r,"antonyms")
 o=q.h(r,"definition")
-if(o==null)o=""
+if(o==null)o="No definition"
 n=q.h(r,"example")
-if(n==null)n=""
+if(n==null)n="No Example"
 m.push(new G.Aw(o,q.h(r,"synonyms"),p,n))}return m},
 Cb:function Cb(a,b){this.a=a
 this.b=b},
@@ -12011,7 +12011,7 @@ for(s=J.aE(a);s.t();){r=s.gD(s)
 q=J.an(r)
 p=B.arT(q.h(r,"definitions"))
 q=q.h(r,"partOfSpeech")
-o.push(new B.Cb(q==null?"":q,p))}return o},
+o.push(new B.Cb(q==null?"No parts of speech":q,p))}return o},
 FJ:function FJ(a,b,c){this.a=a
 this.b=b
 this.c=c}},P={
@@ -59686,8 +59686,9 @@ s.toString
 s.f.qb(C.eJ)},
 $S:0}
 Q.a6k.prototype={
-$0(){T.h5(new T.eF(Q.kt(this.a.a)))
-var s=this.b.a_(t.Cu)
+$0(){var s=this.a.a
+T.h5(new T.eF(Q.kt(s.length===0?"No definition":s)))
+s=this.b.a_(t.Cu)
 s.toString
 s.f.qb(C.eJ)},
 $S:0}
@@ -59708,7 +59709,7 @@ if(l.b===200){p=J.b3(C.b8.Iv(0,B.asu(U.aqL(l.e).c.a.h(0,"charset")).dg(0,l.x),nu
 o=J.an(p)
 if(o.h(p,"word")!=null){n=O.arU(o.h(p,"meanings"))
 m=o.h(p,"origin")
-if(m==null)m=""
+if(m==null)m="No origin"
 o=o.h(p,"word")
 q=new O.FJ(o==null?"":o,m,n)
 s=1

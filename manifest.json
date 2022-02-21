@@ -1,11 +1,11 @@
 {
-    "name": "word_mail",
-    "short_name": "word_mail",
+    "name": "Word Mail",
+    "short_name": "Word Mail",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "A portable dictionary.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
